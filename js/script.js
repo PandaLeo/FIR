@@ -3,7 +3,7 @@
 	var chessBoard=[];
 	var me=true;
 	var over=false;
-	//赢法数组三维数组
+	// 赢法数组三维数组
 	var wins=[];
 	for (var i = 0; i <15; i++) {
 		chessBoard[i]=[];
@@ -23,7 +23,7 @@
 	}
 
 	var count=0;
-	//红线
+	//横线
 	for (var i = 0; i <15; i++) {
 	   for (var j =0; j <11; j++) {
 		   for (var k =0; k <5; k++) {
@@ -32,7 +32,7 @@
 		   count++;		
 	    }
 	}
-	//竖线
+	//纵线
 	for (var i = 0; i <15; i++) {
 	   for (var j =0; j <11; j++) {
 		   for (var k =0; k <5; k++) {
@@ -42,7 +42,7 @@
 	    }
 	}
 
-	//	斜线
+	//斜线
 	for (var i = 0; i <11; i++) {
 	   for (var j =0; j <11; j++) {
 		   for (var k =0; k <5; k++) {
