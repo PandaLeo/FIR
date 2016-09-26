@@ -3,7 +3,7 @@
 	var chessBoard=[];
 	var me=true;
 	var over=false;
-	// 赢法数组三维数组
+	//赢法数组三维数组
 	var wins=[];
 	for (var i = 0; i <15; i++) {
 		chessBoard[i]=[];
