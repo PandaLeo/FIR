@@ -107,7 +107,7 @@
 
 		context.fillStyle=gradient;
 		context.fill();
-	}
+	};
 	//罗旗子
 	chess.onclick = function(e) {
 		if(over){
@@ -143,7 +143,7 @@
 
 	}
 	}
-	}
+	};
 
 
 	var computerAI=function(){
@@ -226,4 +226,4 @@
 	me=!me;	
 
 	}
-	}	
+	};	
