@@ -42,16 +42,6 @@
 	    }
 	}
 
-	//斜线
-	for (var i = 0; i <11; i++) {
-	   for (var j =0; j <11; j++) {
-		   for (var k =0; k <5; k++) {
-		   wins[i+k][j+k][count]=true;
-		   }
-		   count++;		
-	    }
-	}
-
 	//反斜线
 	for (var i = 0; i <11; i++) {
 	   for (var j =14; j >3; j--) {
@@ -61,6 +51,17 @@
 		   count++;		
 	    }
 	}
+
+	//斜线
+	for (var i = 0; i <11; i++) {
+		for (var j =0; j <11; j++) {
+			for (var k =0; k <5; k++) {
+				wins[i+k][j+k][count]=true;
+			}
+			count++;
+		}
+	}
+
 	console.log(count);
 
 	for (var i = 0; i <count; i++) {
@@ -78,7 +79,7 @@
 		drawChessBoard();
 		//oneStep(0,0,true);	
 		//oneStep(1,1,false);	
-	}
+	};
 	//画棋盘
 	var drawChessBoard=function(){
 	for(var i=0; i<15; i++){
@@ -89,7 +90,7 @@
 		context.lineTo(435,15+i*30);
 		context.stroke();
 	}
- 　}
+ 　};
  	//画棋子
 	var oneStep=function(i,j,me){
 		context.beginPath();
@@ -226,4 +227,4 @@
 	me=!me;	
 
 	}
-	};	
+	};
